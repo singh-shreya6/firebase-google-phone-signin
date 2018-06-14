@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gmail and Phone Authentication</title>
+
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	<script>
+	  var config = {
+	    apiKey: "AIzaSyA1rRG77hpoYS3i6moo900KD8GR1wQ5Kh8",
+	    authDomain: "okcredit-7535e.firebaseapp.com",
+	    databaseURL: "https://okcredit-7535e.firebaseio.com",
+	    projectId: "okcredit-7535e",
+	    storageBucket: "okcredit-7535e.appspot.com",
+	    messagingSenderId: "870984863712"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<body>
+    <div id="container">
+      <h3>Authentication via Gmail/Phone number</h3>
+      <div id="loading">Loading...</div>
+      <div id="loaded" class="hidden">
+        <div id="main">
+          <div id="user-signed-in" class="hidden">
+            <div id="user-info">
+              <div id="phone"></div>
+              <div class="clearfix"></div>
+            </div>
+            <p>
+              <button id="sign-out">Sign Out</button>
+            </p>
+          </div>
+          <div id="user-signed-out" class="hidden">
+            <div id="firebaseui-spa">
+              <h3>App:</h3>
+              <div id="firebaseui-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
