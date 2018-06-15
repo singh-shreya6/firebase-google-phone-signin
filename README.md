@@ -35,7 +35,7 @@ b) npm -v
 
 7) Select: Add firebase to your project web and copy-paste the credentials you get in the index.html at the starting of your code.
 
-8) Next go to the public folder in your system, and copy and paste the 3 files in the repo in the public folder. Open terminal and type:
+8) Next go to the public folder in your system, and copy and paste the 3 files in the repo in the public folder. Open terminal.
 
 9) Initialise Firebase and select the option you want to go for:
    firebase init
