@@ -43,7 +43,7 @@ b) npm -v
 10) Select hosting and press spacebar, press enter at the questions you get, and in the question where it asks to overwrite index.html, answer No.
 
 11) Next deploy it on the URL:
-  firebase deploy
+   firebase deploy
 
 
   
